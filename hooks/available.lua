@@ -1,3 +1,16 @@
 function PLUGIN:Available(ctx)
-    return { "v1.0.0" }
-  end
+  -- input parameters, array
+  local args = ctx.args
+  return {
+      {
+          version = "v1.0.0",
+          note = "LTS",
+          addition = {
+              {
+                  name = "npm",
+                  version = "8.8.8",
+              }
+          }
+      }
+  }
+end
