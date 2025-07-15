@@ -4,7 +4,8 @@ function PLUGIN:EnvKeys(ctx)
   return {
     {
       key = "PATH",
-      value = mainPath .. "\\bin" .. sep .. os.getenv("PATH")
+      --value = mainPath .. "\\bin" .. sep .. os.getenv("PATH")
+      value = mainPath
     }
     -- Add more variables if needed
   }
